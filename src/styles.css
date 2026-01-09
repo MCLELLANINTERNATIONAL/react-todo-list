@@ -5,7 +5,7 @@
 
 body{
     background: #333;
-    color: hsl(200,100%,98%);
+    color: hsl(200, 100%, 98%);
     max-width: 400px;
     padding: 1rem;
     margin:0 auto;
@@ -59,7 +59,8 @@ body{
 }
 
 .new-item-form input:focus {
-    border: hsl(200, 100%, 70%);
+    border-color: hsl(200, 100%, 70%);
+}
 
 .header {
     font-size: 1.5rem;
@@ -68,7 +69,7 @@ body{
 }
 
 .list {
-    margin: O;
+    margin: 0;
     padding: 0;
     margin-left: 1rem;
     list-style: none;
@@ -79,7 +80,7 @@ body{
 }
 
 .list {
-    display: Flex;
+    display: flex;
     flex-direction: column;
     gap: 0.3rem;
 }
@@ -101,7 +102,7 @@ body{
     outline: 1px solid hsl(200, 100%, 50%);   
 }
 
-.list li imput {
+.list li input {
     outline: none;
     width: 0;
     height: 0;
@@ -122,11 +123,11 @@ body{
     align-items: center;
 }
 
-.list li label:hover:before {
+.list li label:hover::before {
     background: hsl(200, 100%, 80%);
 }
 
-.list li:has(input:checked) label:before {
+.list li:has(input:checked) label::before {
     content: "✓";
     background: hsl(200, 100%, 40%);
     color: hsl(200, 100%, 98%);
